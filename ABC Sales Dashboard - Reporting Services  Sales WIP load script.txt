@@ -1,0 +1,122 @@
+///$tab Main
+Binary [940ce718-d6ef-4b42-a7f5-221075c4f2dd];
+
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='$#,##0.00;-$#,##0.00';
+SET TimeFormat='h:mm:ss TT';
+SET DateFormat='M/D/YYYY';
+SET TimestampFormat='M/D/YYYY h:mm:ss[.fff] TT';
+SET FirstWeekDay=6;
+SET BrokenWeeks=1;
+SET ReferenceDay=0;
+SET FirstMonthOfYear=1;
+SET CollationLocale='en-US';
+SET CreateSearchIndexOnReload=1;
+SET MonthNames='Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec';
+SET LongMonthNames='January;February;March;April;May;June;July;August;September;October;November;December';
+SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun';
+SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday';
+SET NumericalAbbreviation='3:k;6:M;9:G;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;-12:p;-15:f;-18:a;-21:z;-24:y';
+
+///$tab Distribution List
+Replace LOAD
+    "Name" AS [DL_DISTRIBUTION_RECIPIENT_NAME],
+    "Email" AS [DL_DISTRIBUTION_EMAIL],
+    SubField([Filters],',') AS [DL_DISTRIBUTION_FILTERS],
+    SubField([Groups],',') AS [DL_DISTRIBUTION_GROUP_NAMES]
+FROM "lib://:DataFiles/receipientlist.xlsx"
+(ooxml, embedded labels, table is DL_DISTRIBUTION_SVC_USERS_QCS);
+
+TempGroups:
+  REPLACE LOAD
+      *
+    FROM "lib://:DataFiles/receipientlist.xlsx"
+    (ooxml, embedded labels, table is DL_DISTRIBUTION_SVC_GROUPS_QCS);
+
+let vEnabledFieldNo = FieldNumber('Enabled', 'TempGroups');
+
+if (vEnabledFieldNo > 0) then
+    DL_DISTRIBUTION_SVC_GROUPS_QCS:
+    REPLACE LOAD
+        "Name" AS [DL_DISTRIBUTION_GROUP_NAMES],
+        "Description" AS [DL_DISTRIBUTION_GROUP_DESCRIPTION],
+        "Enabled" AS [DL_DISTRIBUTION_GROUP_ENABLED]
+    Resident TempGroups;
+else
+
+    DL_DISTRIBUTION_SVC_GROUPS_QCS:
+    REPLACE LOAD
+        "Name" AS [DL_DISTRIBUTION_GROUP_NAMES],
+        "Description" AS [DL_DISTRIBUTION_GROUP_DESCRIPTION],
+        1 AS [DL_DISTRIBUTION_GROUP_ENABLED]
+    Resident TempGroups;
+end if
+
+Drop Table TempGroups;
+
+tag field DL_DISTRIBUTION_RECIPIENT_NAME with 'DL_DISTRIBUTION_SVC__recipientName';
+tag field DL_DISTRIBUTION_EMAIL with 'DL_DISTRIBUTION_SVC__recipientEmail';
+tag field DL_DISTRIBUTION_FILTERS with 'DL_DISTRIBUTION_SVC__recipientFilters';
+tag field DL_DISTRIBUTION_GROUP_NAMES with 'DL_DISTRIBUTION_SVC__groupsName';
+tag field DL_DISTRIBUTION_GROUP_DESCRIPTION with 'DL_DISTRIBUTION_SVC__groupDescription';
+tag field DL_DISTRIBUTION_GROUP_ENABLED with 'DL_DISTRIBUTION_SVC__groupEnabled';
+///$tab Auto-generated section
+Set dataManagerTables = '','<Region_Page>','DL_DISTRIBUTION_SVC_USERS_QCS','DL_DISTRIBUTION_SVC_GROUPS_QCS';
+//This block renames script tables from non generated section which conflict with the names of managed tables
+
+For each name in $(dataManagerTables) 
+    Let index = 0;
+    Let currentName = name; 
+    Let tableNumber = TableNumber(name); 
+    Let matches = 0; 
+    Do while not IsNull(tableNumber) or (index > 0 and matches > 0)
+        index = index + 1; 
+        currentName = name & '-' & index; 
+        tableNumber = TableNumber(currentName) 
+        matches = Match('$(currentName)', $(dataManagerTables));
+    Loop 
+    If index > 0 then 
+            Rename Table '$(name)' to '$(currentName)'; 
+    EndIf; 
+Next; 
+Set dataManagerTables = ;
+
+
+Unqualify *;
+
+[<Region_Page>]:
+LOAD
+	[<Region_1> - <eToday>],
+	[F2],
+	[D],
+	[E],
+	[F],
+	[G],
+	[H],
+	[I],
+	[J]
+ FROM [lib://DataFiles/ReportingServicesExample.xlsx]
+(ooxml, embedded labels, table is [<Region_Page>]);
+
+[DL_DISTRIBUTION_SVC_USERS_QCS]:
+LOAD
+	[Name],
+	[Email],
+	[Filters],
+	[Groups]
+ FROM [lib://DataFiles/DistributionListExample.xlsx]
+(ooxml, embedded labels, table is DL_DISTRIBUTION_SVC_USERS_QCS);
+
+[DL_DISTRIBUTION_SVC_GROUPS_QCS]:
+LOAD
+	[Name] AS [DL_DISTRIBUTION_SVC_GROUPS_QCS.Name],
+	[Description]
+ FROM [lib://DataFiles/DistributionListExample.xlsx]
+(ooxml, embedded labels, table is DL_DISTRIBUTION_SVC_GROUPS_QCS);
+
+
+
+
