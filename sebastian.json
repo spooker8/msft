@@ -54,11 +54,11 @@ VARIABLES
 {"qName":"vEnabledFieldNo","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"5ac4c922-83c0-4d4f-8565-b714126d9899","qType":"variable"},"qData":[],"qIsScriptCreated":true}
 {"qName":"name","qDefinition":"DL_DISTRIBUTION_SVC_GROUPS_QCS","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"67918767-7a10-4855-a6c9-c066b4658fee","qType":"variable"},"qData":[],"qIsScriptCreated":true}
 {"qName":"index","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"9de91ab8-8abc-4d9f-963b-1107e22cc51c","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"vThreshold","qDefinition":"100000","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"4548ba04-2db7-4d60-9812-8ee641b45663","qType":"variable"},"qData":[]}
-{"qName":"vTotalCustomers","qDefinition":"=count(distinct ALL CustomerID)","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"2a547d1e-959f-4c13-988b-3d57ec57966f","qType":"variable"},"qData":[]}
-{"qName":"vDateSelections","qDefinition":"='OrderDate=, [OrderDate.autoCalendar.Year]=, [OrderDate.autoCalendar.Month]=,\n[OrderDate.autoCalendar.YearMonth]=, [OrderDate.autoCalendar.Quarter]=,'","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"f8b9975d-a5dc-46b5-b326-3488dd175796","qType":"variable"},"qData":[]}
-{"qName":"vNumCustomers","qDefinition":"count(distinct CustomerID)","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"07cf45bc-b310-4d4f-8e85-248e302f96fc","qType":"variable"},"qData":[]}
 {"qName":"vSelectedDivision","qDefinition":"=GetFieldSelections(Division,' ', 1)","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"03861dba-69c8-402e-9bed-cb75f74bd76b","qType":"variable"},"qData":[]}
+{"qName":"vNumCustomers","qDefinition":"count(distinct CustomerID)","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"07cf45bc-b310-4d4f-8e85-248e302f96fc","qType":"variable"},"qData":[]}
+{"qName":"vTotalCustomers","qDefinition":"=count(distinct ALL CustomerID)","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"2a547d1e-959f-4c13-988b-3d57ec57966f","qType":"variable"},"qData":[]}
+{"qName":"vThreshold","qDefinition":"100000","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"4548ba04-2db7-4d60-9812-8ee641b45663","qType":"variable"},"qData":[]}
+{"qName":"vDateSelections","qDefinition":"='OrderDate=, [OrderDate.autoCalendar.Year]=, [OrderDate.autoCalendar.Month]=,\n[OrderDate.autoCalendar.YearMonth]=, [OrderDate.autoCalendar.Quarter]=,'","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"f8b9975d-a5dc-46b5-b326-3488dd175796","qType":"variable"},"qData":[]}
 
 FIELDS
 {"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":69,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
