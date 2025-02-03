@@ -1,52 +1,40 @@
 
 SHEETS
-{"qInfo":{"qId":"56cb1a8e-ee80-4dba-8984-69bec687e28f","qType":"sheet"},"qMeta":{"title":"Taxi Trip Detail","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"56cb1a8e-ee80-4dba-8984-69bec687e28f","approved":false,"published":true,"owner":"kmr.anand@yahoo.com","ownerId":"67a07b448277c6ceb0e66f48","createdDate":"2025-02-03T08:40:47.019Z","modifiedDate":"2025-02-03T08:47:53.716Z","publishTime":"2025-02-03T08:47:57.495Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"7b99af01-57a7-4674-8b50-18c3bdb6c609","qType":"sheet"},"qMeta":{"title":"Tax Trip Data - Summary - Selection APP","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"7b99af01-57a7-4674-8b50-18c3bdb6c609","approved":false,"published":true,"owner":"kmr.anand@yahoo.com","ownerId":"67a07b448277c6ceb0e66f48","createdDate":"2025-02-03T08:40:46.854Z","modifiedDate":"2025-02-03T08:50:32.679Z","publishTime":"2025-02-03T08:47:07.821Z","privileges":["read"]},"qData":[]}
 
 OBJECTS ON SHEETS
-{"name":"JGCQKfL","type":"auto-chart","col":6,"row":1,"colspan":6,"rowspan":5,"bounds":{"y":8.333333333333332,"x":25,"width":25,"height":41.66666666666667}}
-{"name":"jmwLh","type":"table","col":12,"row":1,"colspan":12,"rowspan":5,"bounds":{"y":8.333333333333332,"x":50,"width":50,"height":41.66666666666667}}
-{"name":"HpkPTP","type":"auto-chart","col":12,"row":6,"colspan":12,"rowspan":6,"bounds":{"x":50,"y":50,"width":50,"height":50}}
-{"name":"rPjAgEP","type":"map","col":0,"row":6,"colspan":12,"rowspan":6,"bounds":{"x":0,"y":50,"width":50,"height":50}}
-{"name":"DaLuQKs","type":"kpi","col":0,"row":1,"colspan":6,"rowspan":5,"bounds":{"y":8.333333333333332,"x":0,"width":25,"height":41.66666666666667}}
-{"name":"JcpdC","type":"filterpane","col":12,"row":0,"colspan":4,"rowspan":1,"bounds":{"y":0,"x":50,"width":16.666666666666664,"height":8.333333333333332}}
-{"name":"LxUzc","type":"filterpane","col":16,"row":0,"colspan":8,"rowspan":1,"bounds":{"y":0,"x":66.66666666666666,"width":33.33333333333333,"height":8.333333333333332}}
-{"name":"mAuSX","type":"filterpane","col":0,"row":0,"colspan":12,"rowspan":1,"bounds":{"y":0,"x":0,"width":50,"height":8.333333333333332}}
+{"name":"LpHYj","type":"kpi","col":9,"row":7,"colspan":15,"rowspan":5,"bounds":{"y":58.333333333333336,"x":37.5,"width":62.5,"height":41.66666666666667}}
+{"name":"NcdCPQE","type":"auto-chart","col":9,"row":0,"colspan":7,"rowspan":4,"bounds":{"y":0,"x":37.5,"width":29.166666666666668,"height":33.33333333333333}}
+{"name":"QkDhqd","type":"auto-chart","col":9,"row":4,"colspan":7,"rowspan":3,"bounds":{"y":33.33333333333333,"x":37.5,"width":29.166666666666668,"height":25}}
+{"name":"cgPUP","type":"auto-chart","col":16,"row":0,"colspan":8,"rowspan":4,"bounds":{"y":0,"x":66.66666666666666,"width":33.33333333333333,"height":33.33333333333333}}
+{"name":"TWusvp","type":"filterpane","col":0,"row":4,"colspan":9,"rowspan":3,"bounds":{"y":33.33333333333333,"x":0,"width":37.5,"height":25}}
+{"name":"dswLVb","type":"filterpane","col":0,"row":7,"colspan":9,"rowspan":4,"bounds":{"y":58.333333333333336,"x":0,"width":37.5,"height":33.33333333333333}}
+{"name":"NUYLvF","type":"filterpane","col":0,"row":0,"colspan":9,"rowspan":4,"bounds":{"y":0,"x":0,"width":37.5,"height":33.33333333333333}}
+{"name":"aLhgnj","type":"kpi","col":16,"row":4,"colspan":8,"rowspan":3,"bounds":{"y":33.33333333333333,"x":66.66666666666666,"width":33.33333333333333,"height":25}}
 
 DIMENSIONS
 
 MEASURES
 
 VARIABLES
-{"qName":"odag_VENDOR_ID","qDefinition":"'CMT'","qMeta":{"privileges":["read"]},"qInfo":{"qId":"56b4f9e3-8a8a-4aec-8763-9f32e5ff5e5e","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"odag_PAYMENT_TYPE","qDefinition":"'CAS'","qMeta":{"privileges":["read"]},"qInfo":{"qId":"1248ab3f-e813-41ee-8724-4aaf4d5a25a2","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"odag_RATE_CODE","qDefinition":"1","qMeta":{"privileges":["read"]},"qInfo":{"qId":"8b76eea2-b618-4d16-8db6-54dc06f3e2d3","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"vVendor_id","qDefinition":"CMT","qMeta":{"privileges":["read"]},"qInfo":{"qId":"7be915b2-a54d-4258-98c2-9d8d6b8ce364","qType":"variable"},"qData":[]}
-{"qName":"vPayment_type","qDefinition":"CAS","qMeta":{"privileges":["read"]},"qInfo":{"qId":"6eaab910-0af1-499c-b6e5-cc49d574bd87","qType":"variable"},"qData":[]}
-{"qName":"vRate_code","qDefinition":"1","qMeta":{"privileges":["read"]},"qInfo":{"qId":"e8eaa403-ded8-48a2-bebf-2bbc438f9244","qType":"variable"},"qData":[]}
+{"qName":"name","qDefinition":"TRIPS_SMALL","qMeta":{"privileges":["read"]},"qInfo":{"qId":"f385ae23-e408-49cc-83ad-9817fbd2b79d","qType":"variable"},"qData":[]}
+{"qName":"index","qDefinition":"0","qMeta":{"privileges":["read"]},"qInfo":{"qId":"9923b2af-076d-40e1-aac2-c613b097f245","qType":"variable"},"qData":[]}
+{"qName":"currentName","qDefinition":"TRIPS_SMALL","qMeta":{"privileges":["read"]},"qInfo":{"qId":"feba7cd1-a081-4f7b-b38c-21e96be105dd","qType":"variable"},"qData":[]}
+{"qName":"matches","qDefinition":"0","qMeta":{"privileges":["read"]},"qInfo":{"qId":"49c58e27-ace4-4d35-860c-0dcc69bc88d2","qType":"variable"},"qData":[]}
 
 FIELDS
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":19,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":9,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
 {"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":1,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
 {"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":1,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
 {"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":1,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":19,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":9,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
 {"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$ascii","$text"],"qSrcTables":[]}
-{"qName":"VENDOR_ID","qCardinal":1,"qTags":["$ascii","$text"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"PICKUP_DATETIME","qCardinal":1255,"qTags":["$ascii","$text"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"DROPOFF_DATETIME","qCardinal":1256,"qTags":["$ascii","$text"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"PICKUP_LONGITUDE","qCardinal":1222,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"PICKUP_LATITUDE","qCardinal":1225,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"DROPOFF_LONGITUDE","qCardinal":1227,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"DROPOFF_LATITUDE","qCardinal":1229,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"RATE_CODE","qCardinal":1,"qTags":["$ascii","$text"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"PASSENGER_COUNT","qCardinal":5,"qTags":["$numeric","$integer"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"TRIP_DISTANCE","qCardinal":63,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"PAYMENT_TYPE","qCardinal":1,"qTags":["$ascii","$text"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"FARE_AMOUNT","qCardinal":18,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"EXTRA","qCardinal":3,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"MTA_TAX","qCardinal":2,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"IMP_SURCHARGE","qCardinal":0,"qTags":[],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"TIP_AMOUNT","qCardinal":2,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"TOLLS_AMOUNT","qCardinal":4,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"TOTAL_AMOUNT","qCardinal":53,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
-{"qName":"STORE_AND_FWD_FLAG","qCardinal":2,"qTags":["$ascii","$text"],"qSrcTables":["TRIPS_SMALL"]}
+{"qName":"VENDOR_ID","qCardinal":3,"qTags":["$ascii","$text"],"qSrcTables":["TRIPS_SMALL"]}
+{"qName":"RATE_CODE","qCardinal":8,"qTags":["$ascii","$text"],"qSrcTables":["TRIPS_SMALL"]}
+{"qName":"PAYMENT_TYPE","qCardinal":12,"qTags":["$ascii","$text"],"qSrcTables":["TRIPS_SMALL"]}
+{"qName":"Total Amount","qCardinal":73,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
+{"qName":"Fare Amount","qCardinal":73,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
+{"qName":"Tip Amount","qCardinal":38,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
+{"qName":"Tolls Amount","qCardinal":54,"qTags":["$numeric"],"qSrcTables":["TRIPS_SMALL"]}
+{"qName":"Trip Count","qCardinal":54,"qTags":["$numeric","$integer"],"qSrcTables":["TRIPS_SMALL"]}
+{"qName":"Passenger Count","qCardinal":59,"qTags":["$numeric","$integer"],"qSrcTables":["TRIPS_SMALL"]}
