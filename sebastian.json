@@ -1,9 +1,9 @@
 
 SHEETS
-{"qInfo":{"qId":"usdub","qType":"sheet"},"qMeta":{"title":"My new sheet","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"usdub","approved":false,"published":false,"owner":"dvb@abc.com","ownerId":"xM_NvyBoEIwDFtK_aSZMs_5Wq1tYuUT7","createdDate":"2025-01-30T10:49:50.337Z","modifiedDate":"2025-02-04T21:48:43.621Z","privileges":["read","update","delete","publish","change_owner"]},"qData":[]}
+{"qInfo":{"qId":"uwjVJY","qType":"sheet"},"qMeta":{"title":"My new sheet","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"uwjVJY","approved":false,"published":false,"owner":"dvb@abc.com","ownerId":"xM_NvyBoEIwDFtK_aSZMs_5Wq1tYuUT7","createdDate":"2025-04-24T11:33:57.377Z","modifiedDate":"2025-04-24T11:34:42.832Z","privileges":["read","update","delete","publish","change_owner"]},"qData":[]}
 
 OBJECTS ON SHEETS
-{"bounds":{"x":0,"y":0,"width":100,"height":100},"col":0,"colspan":24,"name":"qUHrJY","row":0,"rowspan":12,"smartGrid":{"rowIdx":0,"itemIdx":0,"item":{"width":1}},"type":"auto-chart"}
+{"bounds":{"x":0,"y":0,"width":100,"height":100},"col":0,"colspan":24,"name":"yzRjP","row":0,"rowspan":12,"smartGrid":{"rowIdx":0,"itemIdx":0,"item":{"width":1}},"type":"sn-table"}
 
 DIMENSIONS
 
@@ -12,13 +12,12 @@ MEASURES
 VARIABLES
 
 FIELDS
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":4,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":3,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
 {"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":1,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
 {"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":1,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
 {"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":1,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":4,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":3,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
 {"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$ascii","$text"],"qSrcTables":[]}
-{"qName":"q_sense_version","qCardinal":3,"qTags":["$ascii","$text"],"qSrcTables":["whatsnew3"]}
-{"qName":"category","qCardinal":7,"qTags":["$ascii","$text"],"qSrcTables":["whatsnew3"]}
-{"qName":"title","qCardinal":38,"qTags":["$ascii","$text"],"qSrcTables":["whatsnew3"]}
-{"qName":"description","qCardinal":38,"qTags":["$text"],"qSrcTables":["whatsnew3"]}
+{"qName":"Region","qCardinal":4,"qTags":["$ascii","$text"],"qSrcTables":["SalesData"]}
+{"qName":"Product","qCardinal":5,"qTags":["$ascii","$text"],"qSrcTables":["SalesData"]}
+{"qName":"Sales","qCardinal":6,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
